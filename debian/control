@@ -1,0 +1,21 @@
+Source: topgrade
+Section: rust
+Priority: optional
+Maintainer: Martin Simon <me@martinsimon.me>
+Build-Depends:
+ cargo:native,
+ debhelper (>= 12),
+ rustc:native,
+Standards-Version: 4.5.1
+Homepage: https://github.com/r-darwish/topgrade
+
+Package: topgrade
+Architecture: amd64
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Upgrade everything.
+ Keeping your system up to date mostly involves invoking more than a single
+ package manager. This usually results in big shell one-liners saved in your
+ shell history. Topgrade tries to solve this problem by detecting which tools
+ you use and run their appropriate package managers.
