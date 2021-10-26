@@ -1,3 +1,10 @@
+topgrade (8.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Install rustc from rustup.rs for more recent versions
+
+ -- Martin Simon <me@martinsimon.me>  Tue, 26 Oct 2021 00:00:00 +0000
+
 topgrade (7.1.0-1) unstable; urgency=medium
 
   * Initial Release.

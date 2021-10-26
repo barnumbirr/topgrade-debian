@@ -12,6 +12,9 @@ export DEBIAN_FRONTEND DEB_BUILD_OPTIONS
 
 dependencies() {
     apt update && apt install -y devscripts equivs git
+    apt install -y curl
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+    . ~/.cargo/env
 }
 
 get_sources() {
